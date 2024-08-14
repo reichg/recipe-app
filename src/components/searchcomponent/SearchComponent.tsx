@@ -3,7 +3,7 @@ import FoodItem from "../../model/FoodItem";
 import styles from "./search.module.css";
 
 const URL = "https://api.spoonacular.com/recipes/complexSearch";
-const API_KEY = "8eba740cb2114f54a94a3fa32132ee64";
+const API_KEY = "07570e7b6d16404ba7d8dc92651d0dec";
 
 interface SearchComponentProps {
   foodData?: FoodItem[];
@@ -19,14 +19,14 @@ function SearchComponent({ /*foodData*/ setFoodData }: SearchComponentProps) {
   useEffect(() => {
     async function fetchFood() {
       // response from API
-        const res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
+      const res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
       //   get structure from the response (json)
-        const data = await res.json();
+      const data = await res.json();
       //   console.log(data);
-        setFoodData(data.results);
+      setFoodData(data.results);
     }
     fetchFood();
-  }, []);
+  }, [query]);
   return (
     <div className={styles.searchContainer}>
       <input
@@ -35,6 +35,7 @@ function SearchComponent({ /*foodData*/ setFoodData }: SearchComponentProps) {
         type="text"
         // query will be used as value
         value={query}
+        placeholder="Search Recipes..."
         //on change for when the input changes
         onChange={(e) =>
           // easy way to get input target value

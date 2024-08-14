@@ -6,7 +6,8 @@
 
 .searchTextbox {
     border: none;
-    border-bottom: 1px solid rgb(61, 26, 89);
+    border-bottom: 1px solid rgba(140, 0, 255, 0.446);
+    border-right: 1px solid rgba(140, 0, 255, 0.446);;
     padding: 10px 10px;
     width: 100%;
     outline: none;

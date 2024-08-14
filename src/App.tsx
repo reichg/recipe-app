@@ -13,7 +13,11 @@ function App() {
 
   // pass down foodId to food details
   // pass down setFoodId to FoodList and other children
-  const [foodId, setFoodId] = useState(-1);
+  const [foodId, setFoodId] = useState(1);
+  
+  // function getRandomInt(max: number) {
+  //   return Math.floor(Math.random() * max)+1;
+  // }
 
   return (
     <>
