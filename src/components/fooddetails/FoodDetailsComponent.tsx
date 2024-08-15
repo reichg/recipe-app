@@ -12,7 +12,7 @@ function FoodDetailsComponent({ foodId }: FoodDetailsComponentProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   const URL = `https://api.spoonacular.com/recipes/${foodId}/information`;
-  const API_KEY = "07570e7b6d16404ba7d8dc92651d0dec";
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     async function fetchFoodDetails() {

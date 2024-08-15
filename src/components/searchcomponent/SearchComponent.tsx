@@ -3,7 +3,7 @@ import FoodItem from "../../model/FoodItem";
 import styles from "./search.module.css";
 
 const URL = "https://api.spoonacular.com/recipes/complexSearch";
-const API_KEY = "07570e7b6d16404ba7d8dc92651d0dec";
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 interface SearchComponentProps {
   foodData?: FoodItem[];
