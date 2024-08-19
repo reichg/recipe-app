@@ -11,5 +11,5 @@ This recipe-app is made in Typescript/React + Vite. It leverages the spoonacular
 
 # DEMO 
 
-https://github.com/user-attachments/assets/f3665956-777a-4cf3-b637-d57a4495aec8
+https://github.com/user-attachments/assets/7187d74c-44a4-4aec-9882-ae3527b684df
 
